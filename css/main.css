@@ -38,7 +38,19 @@ body {
 .column {
     padding: 2.2rem;
     padding-bottom: 3rem;
-    
+    width: 25%;
+    overflow: hidden;
+    transition: width .3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.column.active {
+    width: 50%;
+
+
 }
 
 .column:first-of-type {
@@ -92,6 +104,7 @@ body {
     padding-bottom: 4rem;
     line-height: 1.2rem;
     font-weight: lighter;
+    flex-grow: 1;
 }
 
 /* Links */
